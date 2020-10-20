@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="dashboard layout for promptcomputer">
+  <meta name="author" content="Maceteli Golden">
+
+  <title>Ticket Management</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      
+      <div class="top-header ">
+      <a class="sidebar-brand d-block align-items-center justify-content-center py-5 mb-5"   href="index.html">
+        <center class="">
+        <div class="  mb-3 ">
+            <img class="img-profile rounded-circle " height="83" width="83" src="img/istockphoto-1048746062-170667a.jpg">
+        </div>
+        <p class="user-name  mx-1 mb-5">Golden I.</p>
+      </center>
+      </a>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#3d78ec" fill-opacity="0.7" d="M0,128L60,133.3C120,139,240,149,360,133.3C480,117,600,75,720,96C840,117,960,203,1080,245.3C1200,288,1320,288,1380,288L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+    
+    
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item mt-5 ">
+        <a class="nav-link d-flex" href="index.html">
+          <span class="mr-2">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+              <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+            </svg></i>
+          </span>
+          <span>Dashboard</span></a>
+      </li>
+
+  
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item ">
+        <a class="nav-link  d-flex" href="#" >
+          <span class="mr-2">  <svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-box-seam" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+          </svg></span>
+          <span>Services</span>
+        
+        </a>
+        
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item ">
+          <a class="nav-link  d-flex" href="#" >
+              <span class="mr-2"> <svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-people text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+              </svg></span>
+              <span>Staff</span>
+              <span class="text-right d-block badge badge-danger badge-counter py-2 px-2 mr-2">3+</span>
+            </a>
+      </li>
+
+    
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+          <a class="nav-link  d-flex" href="#" >
+              <span class="mr-2"><svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-tags" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                <path fill-rule="evenodd" d="M5.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+              </svg></span>
+              <span>Tickets</span>
+              <span class="text-right d-block badge badge-danger badge-counter py-2 px-2 mr-2">3+</span>
+            </a>
+      </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+          <a class="nav-link  d-flex" href="#" >
+              <span class="mr-2"> <svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-funnel text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+              </svg></span>
+              <span>Categories</span>
+           
+            </a>
+      </li>
+
+     
+
+      <!-- Sidebar Toggler (Sidebar)
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+       -->
+       <span class="logout text-center bg-danger text-white mt-5 mr-2 ml-2 py-2 rounded">
+        <span class="mr-2"> <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-box-arrow-right text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        </svg></span>
+        <span>Logout</span>
+       </span>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand bg-white topbar mb-4 static-top shadow" id="topbar">
+     
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+         
+         <!-- Topbar Search -->
+         <form id="searchbar" class="d-none d-sm-inline-block form-inline mr-auto ml-md-5 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button class="btn  border-0" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+              <input type="text" class="form-control border-0 small" placeholder="Search for anything..." aria-label="Search" aria-describedby="basic-addon2">
+             
+            </div>
+          </form>
+      
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto" >
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown d-md-none no-arrow ">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-search fa-fw"></i>
+                  </a>
+                  <!-- Dropdown - Messages -->
+                  <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                    <form id="searchbar" class="form-inline mr-auto w-100 navbar-search">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn bg-light border-0" type="button">
+                              <i class="fas fa-search fa-sm"></i>
+                            </button>
+                          </div>
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                     
+                    </div>
+                    </form>
+                  </div>
+    
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1" >
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+                  <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                </svg>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-counter"><i class="fas fa-circle text-danger"></i></span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+               
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown d-md-none no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <!-- main content column -->
+            <div class="col-xl-9 col-lg-7">
+                <div class="row" id="statistic-card">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card   h-100 py-4">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center text-center ">
+                                
+                                <div class="col">
+                                    <center>
+                                        <p class="icon-circle bg-active py-3 px-3  ">
+                                          <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-tags text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                                            <path fill-rule="evenodd" d="M5.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                            <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                                          </svg>
+                                        </p>
+                                      </center>  
+                                </div>
+                              </div>
+                          <div class="row no-gutters align-items-center text-center">
+                            <div class="col ">
+                              <div class="  mb-2" id="card-title">Active Ticket(s)</div>
+                              <div class="h5 mb-0 " id="card-number">22</div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card  h-100 py-4">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center text-center ">
+                                
+                                <div class="col">
+                                    <center>
+                                        <p class="icon-circle bg-danger py-3 px-3  ">
+                                          <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-tags text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                                            <path fill-rule="evenodd" d="M5.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                            <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                                          </svg>
+                                        </p>
+                                      </center>  
+                                </div>
+                              </div>
+                          <div class="row no-gutters align-items-center text-center">
+                            <div class="col ">
+                              <div class="  mb-2" id="card-title">Closed Ticket(s)</div>
+                              <div class="h5 mb-0 " id="card-number">58</div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card  h-100 py-4">
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center text-center ">
+                                  
+                                  <div class="col">
+                                      <center>
+                                          <p class="icon-circle bg-info py-3 px-3  ">
+                                            <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-tags text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                                              <path fill-rule="evenodd" d="M5.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                              <path d="M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                                            </svg>
+                                          </p>
+                                        </center>  
+                                  </div>
+                                </div>
+                            <div class="row no-gutters align-items-center text-center">
+                              <div class="col  ">
+                                <div class="  " id="card-title">Total Ticket(s)</div>
+                                <div class="h5 mb-0 " id="card-number">118</div>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Pending Requests Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card h-100 py-4">
+                          <div class="card-body">
+                              <div class="row d-flex no-gutters  ">
+                                  
+                                  <div class="col">
+                                    <center>
+                                    <p class="icon-circle bg-primary py-3 px-3  ">
+                                      <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-people text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                      </svg>
+                                    </p>
+                                  </center>  
+                                  </div>
+                                </div>
+                            <div class="row no-gutters align-items-center text-center">
+                              <div class="col  ">
+                              <div class="" id="card-title">Staff(s)</div>
+                                <div class="h5 mb-0 " id="card-number">8</div>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+             
+              <div class="table-responsive px-1">
+                  <table >
+                    <thead>
+                      <tr>
+                          <th scope="col ml-3"><small class="align-middle">
+                            <label class="checkbox-container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                        <th scope="col ml-3 "><small class="align-middle">Name & ID<small></th>
+                        <th scope="col ml-3"><small class="align-middle">Description<small></th>
+                        <th scope="col ml-3"><small class="">Email<small></th>
+                          <th scope="col ml-3"><small class="">Date<small></th>
+                            <th scope="col ml-3"><small class="">Location<small></th>
+                        <th scope="col ml-3"><small class="">Agent<small></th>
+                        <th scope="col ml-3"><small class="">Status<small></th>
+                        <th scope="col ml-3"><small class=""><small></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="rounded-3">
+                        
+                        <td class="align-middle"> 
+                          <label class="checkbox-container">
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td><a href="#"><span class="d-block font-weight-bold">Jenny</span></a></td>
+                        <td class="align-middle font-weight-bold"> Graphic Design
+                        </td>
+                        <td class="align-middle">tripledecker@gmail.com</td>
+                        <td class="align-middle">23:09.20</td>
+                        <td class="align-middle font-weight-bold">Texas, Houston</td>
+                        <td class="align-middle"> Calitommy</td>
+                        <td class="align-middle text-center"><i class="far fa-clock text-danger"></i>
+                        </td>
+                        <td class="align-middle">
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle font-weight-bold" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400 "></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">Dropdown Header:</div>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="rounded-3">
+                        
+                        <td class="align-middle "> 
+                          <label class="checkbox-container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td><span class="d-block font-weight-bold">Jenny</span></td>
+                        <td class="align-middle font-weight-bold"> Graphic Design
+                        </td>
+                        <td class="align-middle">tripledecker@gmail.com</td>
+                        <td class="align-middle">23:09.20</td>
+                        <td class="align-middle font-weight-bold">Texas, Houston</td>
+                        <td class="align-middle"> Calitommy</td>
+                        <td class="align-middle text-center"><i class="fas fa-check text-success"></i>
+                        </td>
+                        <td class="align-middle">
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">Dropdown Header:</div>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="rounded-3">
+                        
+                        <td class="align-middle "> 
+                          <label class="checkbox-container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td><span class="d-block font-weight-bold">Jenny</span></td>
+                        <td class="align-middle font-weight-bold"> Graphic Design
+                        </td>
+                        <td class="align-middle">tripledecker@gmail.com</td>
+                        <td class="align-middle">23:09.20</td>
+                        <td class="align-middle font-weight-bold">Texas, Houston</td>
+                        <td class="align-middle"> Calitommy</td>
+                        <td class="align-middle text-center"><i class="far fa-clock text-warning"></i>
+                        </td>
+                        <td class="align-middle">
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">Dropdown Header:</div>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="rounded-3">
+                        
+                        <td class="align-middle ">  
+                        <label class="checkbox-container">
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label>
+                        </td>
+                        <td><span class="d-block font-weight-bold">Jenny</span></td>
+                        <td class="align-middle font-weight-bold"> Graphic Design
+                        </td>
+                        <td class="align-middle">tripledecker@gmail.com</td>
+                        <td class="align-middle">23:09.20</td>
+                        <td class="align-middle font-weight-bold">Texas, Houston</td>
+                        <td class="align-middle"> Calitommy</td>
+                        <td class="align-middle text-center"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-alarm" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+                        </svg>
+                        </td>
+                        <td class="align-middle">
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">Dropdown Header:</div>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="rounded-3">
+                        
+                        <td class="align-middle "> 
+                          <label class="checkbox-container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td><span class="d-block font-weight-bold">Jenny</span></td>
+                        <td class="align-middle font-weight-bold"> Graphic Design
+                        </td>
+                        <td class="align-middle">tripledecker@gmail.com</td>
+                        <td class="align-middle">23:09.20</td>
+                        <td class="align-middle font-weight-bold">Texas, Houston</td>
+                        <td class="align-middle"> Calitommy</td>
+                        <td class="align-middle text-center"><i class="far fa-clock text-warning"></i>
+                        </td>
+                        <td class="align-middle">
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                              <div class="dropdown-header">Dropdown Header:</div>
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+
+            <!-- comments -->
+            <div class="col-xl-3 col-lg-5">
+              <div class="card border-0 mb-2" id="comment-card">
+                    <a class="d-flex align-items-center py-3 px-3" href="#">
+                        <div class="mr-3">
+                          <div class="icon-circle bg-light">
+                            <i class="far fa-comment text-primary "></i>
+                          </div>
+                        </div>
+                        <div class="comment-body">
+                          <div class=" text-gray-500 text-uppercase font-weight-bold mb-1">Comments</div>
+                          <div class="mb-1">
+                          Spending Alert: We've noticed unusually high spending for your account.
+                          </div>
+                          <p class=" text-gray-500 ">20 min ago</p>
+                        </div>
+                      </a>  
+              </div>
+              <div class="card border-0 mb-2" id="comment-card">
+                  <a class="d-flex align-items-center py-3 px-3" href="#">
+                      <div class="mr-3">
+                          <div class="icon-circle bg-light">
+                              <i class="far fa-comment text-primary "></i>
+                            </div>
+                      </div>
+                      <div class="comment-body">
+                        <div class=" text-gray-500 text-uppercase font-weight-bold mb-1">Comments</div>
+                        <div class="mb-1">
+                        Spending Alert: We've noticed unusually high spending for your account.
+                        </div>
+                        <p class=" text-gray-500 ">20 min ago</p>
+                      </div>
+                    </a>  
+              </div>
+              <div class="card border-0 mb-2" id="comment-card">
+                <a class="d-flex align-items-center py-3 px-3" href="#">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-light">
+                            <i class="far fa-comment text-primary "></i>
+                          </div>
+                    </div>
+                    <div class="comment-body">
+                      <div class=" text-gray-500 text-uppercase font-weight-bold mb-1">Comments</div>
+                      <div class="mb-1">
+                      Spending Alert: We've noticed unusually high spending for your account.
+                      </div>
+                      <p class=" text-gray-500 ">20 min ago</p>
+                    </div>
+                  </a>  
+              </div>
+              <div class="card border-0 mb-2" id="comment-card">
+              <a class="d-flex align-items-center py-3 px-3" href="#">
+                  <div class="mr-3">
+                      <div class="icon-circle bg-light">
+                          <i class="far fa-comment text-primary "></i>
+                         
+                        </div>
+                  </div>
+                  <div class="comment-body" >
+                    <div class=" text-gray-500 text-uppercase font-weight-bold mb-1">Comments</div>
+                    <div class="mb-1">
+                    Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                    <p class=" text-gray-500 ">20 min ago</p>
+                  </div>
+                </a>  
+              </div>
+            </div>
+
+            
+          </div>
+
+      
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; PromptComputers 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+
+</body>
+
+</html>
